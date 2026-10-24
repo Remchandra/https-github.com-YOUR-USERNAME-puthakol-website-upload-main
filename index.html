@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Puthakol — learning, enterprise and sustainable growth from Manipur.">
+  <meta name="theme-color" content="#123c2b">
+  <title>Puthakol | Learn. Grow. Build.</title>
+  <style>
+    :root{--green:#123c2b;--green2:#1f6846;--lime:#c8e58b;--cream:#f7f5ed;--ink:#17231c;--muted:#65736a;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{background:var(--green);color:white;position:sticky;top:0;z-index:5;border-bottom:1px solid #ffffff22}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.12em}
+    .mark{width:42px;height:42px;border:2px solid var(--lime);border-radius:50%;display:grid;place-items:center;color:var(--lime);font-size:20px}
+    nav{display:flex;gap:24px;font-size:14px;color:#e3eee6}nav a:hover{color:var(--lime)}
+    .hero{background:radial-gradient(ellipse at 80% 20%,#347a51 0,transparent 36%),var(--green);color:white;padding:90px 0 100px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.19em;font-size:12px;color:var(--lime);font-weight:800}
+    h1{font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-.045em;margin:20px 0}.hero p{font-size:18px;color:#dce9df;max-width:560px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 21px;font-weight:750;font-size:14px;border:1px solid transparent;cursor:pointer}
+    .btn-primary{background:var(--lime);color:var(--green)}.btn-outline{border-color:#ffffff66;color:white}.btn:hover{transform:translateY(-1px)}
+    .hero-art{min-height:340px;position:relative;display:grid;place-items:center}.orb{width:min(330px,75vw);aspect-ratio:1;border-radius:50%;background:linear-gradient(145deg,#d6eda3,#75a968);display:grid;place-items:center;box-shadow:0 30px 80px #071f1455;position:relative}
+    .orb:before{content:"";position:absolute;inset:22px;border:1px solid #123c2b55;border-radius:50%}.orb-inner{text-align:center;color:var(--green);font-weight:900;letter-spacing:.15em;font-size:28px}.orb-inner small{display:block;font-size:10px;letter-spacing:.28em;margin-top:9px}
+    .float{position:absolute;background:#fff;color:var(--green);padding:12px 16px;border-radius:14px;font-size:13px;font-weight:800;box-shadow:0 12px 28px #0002}.f1{top:12%;right:0}.f2{bottom:10%;left:0}
+    section{padding:78px 0}.section-top{max-width:680px;margin-bottom:34px}.section-top .eyebrow{color:var(--green2)}h2{font-size:clamp(30px,4vw,46px);letter-spacing:-.035em;line-height:1.12;margin:12px 0} .section-top p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;padding:26px;border-radius:22px;border:1px solid #e7e9df;min-height:220px}.card-icon{width:48px;height:48px;display:grid;place-items:center;background:#edf5df;border-radius:15px;font-size:23px}.card h3{margin:18px 0 8px;font-size:20px}.card p{margin:0;color:var(--muted);font-size:14px}
+    .about{background:#e9efdf}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}.about-panel{background:var(--green);color:white;border-radius:26px;padding:34px}.about-panel strong{font-size:28px;line-height:1.2;display:block}.about-panel p{color:#dce9df}.ticks{padding:0;list-style:none}.ticks li{padding:11px 0;border-bottom:1px solid #d3ddc9}.ticks li:before{content:"✓";font-weight:900;color:var(--green2);margin-right:12px}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px}.contact-box{background:white;border:1px solid #e7e9df;border-radius:22px;padding:28px}.contact-box p{color:var(--muted)}label{display:block;font-size:13px;font-weight:750;margin:14px 0 6px}input,textarea{width:100%;font:inherit;padding:12px 14px;border:1px solid #d6ddd3;border-radius:12px;background:#fcfcf8}textarea{min-height:120px;resize:vertical}.note{font-size:12px;color:var(--muted)}
+    footer{background:#0c2b1e;color:#dce9df;padding:28px 0}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px}
+    @media(max-width:760px){nav{gap:12px;font-size:12px}.hero{padding:65px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-art{min-height:280px}.cards{grid-template-columns:1fr}.card{min-height:auto}section{padding:58px 0}.nav{min-height:68px}.hide-mobile{display:none}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Puthakol home"><span class="mark">P</span><span>PUTHAKOL</span></a>
+    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#services">Our Focus</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Rooted in Manipur · Built for tomorrow</div>
+        <h1>Learn. Grow.<br>Build something<br><span style="color:var(--lime)">meaningful.</span></h1>
+        <p>Puthakol is a growing local enterprise with a vision for practical education, technology, agriculture and sustainable opportunities.</p>
+        <div class="actions"><a class="btn btn-primary" href="#services">Explore our focus ↘</a><a class="btn btn-outline" href="#contact">Get in touch</a></div>
+      </div>
+      <div class="hero-art" aria-label="Puthakol brand illustration">
+        <div class="orb"><div class="orb-inner">PUTHAKOL<small>LEARN · GROW · BUILD</small></div></div>
+        <div class="float f1">🌱 Local roots, new ideas</div><div class="float f2">✦ Practical progress</div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="section-top"><div class="eyebrow">Who we are</div><h2>Local knowledge.<br>Future-ready thinking.</h2><p>Our goal is to connect hands-on experience with useful skills and practical solutions that help people and communities move forward.</p></div>
+      <div class="about-panel"><strong>A vision for inclusive, sustainable growth.</strong><p>Puthakol aims to bring together education, digital skills and livelihood projects under one trusted name.</p><p class="note" style="color:#c8d8cb">This is an introductory website draft. Add your verified business details before publishing.</p></div>
+    </div>
+  </section>
+  <section id="services">
+    <div class="wrap">
+      <div class="section-top"><div class="eyebrow">Our focus</div><h2>Ideas that can make a difference.</h2><p>Explore the areas Puthakol can present and develop as its services and projects grow.</p></div>
+      <div class="cards">
+        <article class="card"><div class="card-icon">💻</div><h3>Computer & Digital Skills</h3><p>Practical computer education, office productivity, accounting software and digital literacy for learners and small businesses.</p></article>
+        <article class="card"><div class="card-icon">🐄</div><h3>Dairy & Agriculture</h3><p>Farm-based experience, livestock care, productive farming practices and opportunities for rural enterprise.</p></article>
+        <article class="card"><div class="card-icon">🌿</div><h3>Sustainable Projects</h3><p>Explore responsible, locally relevant ideas such as integrated farming, composting and technology-assisted solutions.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="projects">
+    <div class="wrap">
+      <div class="section-top"><div class="eyebrow">Our direction</div><h2>Start small. Build with purpose.</h2><p>From a practical training idea to a community-focused farming project, every initiative should have a clear plan and measurable value.</p></div>
+      <div class="cards">
+        <article class="card"><h3>Skills for work</h3><p>Training and learning resources designed around useful, real-world skills.</p></article>
+        <article class="card"><h3>Farm & livelihood</h3><p>Responsible livestock and agricultural projects informed by local experience.</p></article>
+        <article class="card"><h3>Digital innovation</h3><p>Future opportunities to use data and simple digital tools to support learning and farming.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-top"><div class="eyebrow">Contact Puthakol</div><h2>Let's start a conversation.</h2><p>Have a question, training enquiry or project idea? Use the form below to prepare an email.</p></div>
+      <div class="contact-grid">
+        <div class="contact-box"><h3>Connect with us</h3><p><strong>Business:</strong> Puthakol</p><p><strong>Location:</strong> Khurai, Imphal East, Manipur, India <span class="note">(confirm before publishing)</span></p><p><strong>Email / phone:</strong> Add your official contact details here.</p><p class="note">Your phone number and email have intentionally not been guessed or published.</p></div>
+        <form class="contact-box" id="contactForm"><h3>Send an enquiry</h3><label for="name">Your name</label><input id="name" name="name" required placeholder="Enter your name"><label for="email">Your email</label><input id="email" name="email" type="email" required placeholder="you@example.com"><label for="message">Message</label><textarea id="message" name="message" required placeholder="How can Puthakol help?"></textarea><button class="btn btn-primary" style="margin-top:16px;border:0" type="submit">Prepare email ↗</button><p class="note">This opens your email app. It will need an official Puthakol email address to be added in the website settings.</p></form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Puthakol. All rights reserved.</span><span>Learn. Grow. Build.</span></div></footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const subject = encodeURIComponent('Website enquiry for Puthakol');
+    const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+    alert('Before publishing, add your official Puthakol email address to the contact form code. For now, this demo form does not send or store messages.');
+  });
+</script>
+</body>
+</html>
